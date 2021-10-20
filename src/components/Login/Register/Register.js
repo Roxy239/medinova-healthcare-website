@@ -1,34 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useAuth from './../../../hooks/useAuth';
-import './Login.css'
 
-const Login = () => {
-    const { signInUsingGoogle } = useAuth();
+const Register = () => {
     return (
         <div className="login-form">
             <div>
-                <h2>Please Login</h2>
+                <h2>Create Account</h2>
                 <form onSubmit="">
                     <input type="email" name="" id="" placeholder="your email"></input>
                     <br /> <br />
                     <input type="password" name="" id="" placeholder="your password"></input>
                     <br /> <br />
+                    <input type="password" name="" id="" placeholder="re-enter password"></input>
+                    <br /> <br />
                     <input type="submit" value="Submit" />
-                    <p>New to Medinova?<Link to="/register">Create an account </Link></p>
-                    <div>------------or-----------</div>
-
-                    <br /><br />
                 </form>
-
-                <button onClick={signInUsingGoogle} className="btn btn-warning">Google Sign In</button>
-
+                <p>Already have an account? <Link to="/login">Log in now</Link></p>
             </div>
         </div>
-
-
     );
-
 };
 
-export default Login;
+export default Register;
