@@ -22,6 +22,7 @@ import Footer from './components/Shared/Footer/Footer';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Register from './components/Login/Register/Register';
+import About from './components/About/About';
 
 
 
@@ -47,6 +48,9 @@ function App() {
             </Route>
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
+            </PrivateRoute>
+            <PrivateRoute path="/about">
+              <About></About>
             </PrivateRoute>
 
 
