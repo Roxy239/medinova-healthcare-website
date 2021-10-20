@@ -60,7 +60,7 @@ const useFirebase = () => {
                 setUser(result.user);
                 console.log(result)
                 swal("Good job!", "Account has been created!", "success");
-                history.push('/home');
+                history.push('/');
 
             })
             .finally(() => setIsLoading(false));
