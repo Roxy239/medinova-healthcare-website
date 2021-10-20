@@ -1,20 +1,9 @@
-
-// import './App.css';
-// import Services from './components/Home/Services/Services';
-// import Home from './components/Home/Home/Home';
-
-
-
-// export default App;
 import './App.css';
 import Home from './components/Home/Home/Home'
-// import Home from './Pages/Home/Home/Home';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NotFound from './components/NotFound/NotFound.js';
-// import Booking from './Pages/Booking/Booking/Booking';
-// import Login from './Pages/Login/Login/Login';
-// import Header from './Pages/Shared/Header/Header';
-// import AuthProvider from './contexts/AuthProvider';
+
 import Booking from './components/Booking/Booking/Booking';
 import Login from './components/Login/Login/Login';
 import Header from './components/Shared/Header/Header';
@@ -23,6 +12,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Register from './components/Login/Register/Register';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -52,16 +42,10 @@ function App() {
             <PrivateRoute path="/about">
               <About></About>
             </PrivateRoute>
+            <PrivateRoute path="/contact">
+              <Contact></Contact>
 
-
-
-            {/* <PrivateRoute path="/booking/:serviceId">
-              <Booking></Booking>
-            </PrivateRoute> */}
-
-
-
-
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

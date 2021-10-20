@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import Service from '../Service/Service';
-import './Services.css';
+import './Search.css'
 
-const Services = () => {
+
+import React, { useState, useEffect } from 'react';
+
+const Search = () => {
     const [services, setServices] = useState([]);
 
     const [searchText, setSearchText] = useState("");
@@ -28,27 +29,18 @@ const Services = () => {
     };
 
 
+
     return (
-        <div id="services">
-
+        <div>
             <div className="course-container p-3 m-5">
-
+                <h1>Our Courses</h1>
                 <div className="srarch-box ">
                     <input onChange={handleChange} type="text" className="p-2" placeholder="enter course name" />
                     <button className="btn btn-danger m-3">Search</button>
                 </div>
-            </div>
-            <h2 className="text-primary mt-5">Our services</h2>
-            <div className="service-container">
-                {
-                    services.map(service => <Service
-                        key={service.id}
-                        service={service}
-                    ></Service>)
-                }
-            </div>
+                /</div>
         </div>
     );
 };
 
-export default Services;
+export default Search;

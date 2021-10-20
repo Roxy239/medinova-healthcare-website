@@ -11,10 +11,10 @@ initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const [email, setEmail] = useState('');
-    const [error, setError] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [error, setError] = useState('');
     const history = useHistory();
-    const [password, setPassword] = useState('');
+    // const [password, setPassword] = useState('');
     //   const [isLogin, setIsLogin] = useState(false)
     const [isLoading, setIsLoading] = useState(true);
 
@@ -60,7 +60,7 @@ const useFirebase = () => {
                 setUser(result.user);
                 console.log(result)
                 swal("Good job!", "Account has been created!", "success");
-                // history.push('/');
+                history.push('/home');
 
             })
             .finally(() => setIsLoading(false));
