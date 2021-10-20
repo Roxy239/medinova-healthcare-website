@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Bronoscopy",
+        "fee": 2000,
+        "description": "a procedure to look directly at the airways in the lungs",
+        "img": "https://i.ibb.co/rwmDfVr/cdc-l-Nk-Rn-ZPfiw-Y-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "HRCT ",
+        "fee": 2000,
+        "description": "a scan procedure to observe  at the whole  choest",
+        "img": "https://i.ibb.co/h77rGJm/cdc-vt7i-Ayiwpf0-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "MRI(Brain)",
+        "fee": 2000,
+        "description": "a procedure to look directly at the airways in the lungs",
+        "img": "https://i.ibb.co/nB48h8D/chris-liverani-d-BI-My696-Rk-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Ultrasnography",
+        "fee": 2000,
+        "description": "Magnetic resonance imaging uses powerful magnets, radio waves",
+        "img": "https://i.ibb.co/Jk1p0q6/hush-naidoo-jade-photography-p-A0uoltkwao-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Colonoscopy",
+        "fee": 2000,
+        "description": "A colonoscopy  is an exam used to detect  abnormalities in large intestine",
+        "img": "https://i.ibb.co/FwJ1NF6/national-cancer-institute-o-CLu-Fi9-GYNA-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Stress Echo",
+        "fee": 2000,
+        "description": "Stress echo is a test that uses ultrasound imaging to show how well heart muscle working",
+        "img": "https://i.ibb.co/m5CsZFT/piron-guillaume-y5h-QCIn1c6o-unsplash.jpg"
+    }
+]
