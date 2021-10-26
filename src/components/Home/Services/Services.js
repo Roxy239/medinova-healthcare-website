@@ -14,7 +14,7 @@ const Services = () => {
             let filter_data = services.filter(obj => obj.name.includes(searchText));
             setServices(filter_data)
         } else {
-            fetch('./services.JSON')
+            fetch('./services.json')
                 .then(res => res.json())
                 .then(data => setServices(data));
         }
